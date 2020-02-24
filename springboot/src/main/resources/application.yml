@@ -1,0 +1,19 @@
+my:
+  name: hhh
+  age: 18
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: i am ${my.name}
+management:
+  server:
+    port:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  profiles:
+    active: dev
+
